@@ -1,0 +1,80 @@
+
+/*=========================== ABOUT ==========================*/
+
+
+.aboutForm {
+    margin-top: 5%;
+}
+
+
+/*=========================== PROFILE ==========================*/
+
+
+.proNav {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-brand {
+    color: whitesmoke;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: whitesmoke;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #777;
+}
+
+.proNav a {
+    color: white;
+}
+
+.proCon {
+    margin-top: 3%;
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    /*width: 275%;*/
+    margin-bottom: 5px;
+}
+
+.liPost {
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 15%;
+    border-bottom: 1px solid lightgray;
+}
+
+.col-sm-1 {
+    width: 6%;
+}
+
+.glyphicon-remove {
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: lightgray;
+}
+
+.glyphicon-remove:hover {
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: gray;
+}
+
+.glyphicon-pencil {
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: lightgray;
+}
+
+.glyphicon-pencil:hover {
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: gray;
+}

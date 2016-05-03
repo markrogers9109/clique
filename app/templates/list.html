@@ -1,0 +1,21 @@
+ I am a list
+
+
+<div>
+    <button ng-click="change()">Change</button>
+    <ul>
+        <li ng-show="item.show" ng-repeat="item in array">{{item.last + ", "}} {{item.first + " "}} {{item.age | myFilter}}</li>
+    </ul>
+
+    <ul>
+        <li ng-hide="item.show" ng-repeat="item in array">{{item.last + ", "}} {{item.first}}</li>
+    </ul>
+
+    <ul>
+        <li ng-show="!item.show" ng-repeat="item in array">{{item.last + ", "}} {{item.first}}</li>
+    </ul>
+
+    <ul>
+        <li ng-if="item.show" ng-repeat="item in array">{{item.last + ", "}} {{item.first + " "}} {{item.age}}</li>
+    </ul>
+</div>
