@@ -30,15 +30,19 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-2 col-sm-offset-1">
-            <img src="img/profile_pic.jpg" alt="#" class="img-responsive img-thumbnail" />
-        </div>
-        <div class="col-sm-3">
-            <h1 ng-model="push.info">User_Name</h1>
+        <div class="container jumboPro">
+            <div class="jumbotron">
+                <div class="col-sm-2">
+                    <img src="img/profile_pic.jpg" alt="#" class="img-responsive img-thumbnail" />
+                </div>
+                <div class="col-sm-3">
+                    <h2 ng-model="profileInfo.name">{{profileInfo.name}}</h2>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row proCon">
-        <div class="col-sm-2 col-sm-offset-1 menuMargin">
+        <div class="col-sm-3 col-sm-offset-1 menuMargin">
             <div class="col-md-12 text-center navPad">
                 <!-- Nav tabs -->
                 <ul class="nav nav-pills nav-stacked" role="tablist">
@@ -55,7 +59,7 @@
                             <div class="thumbnail">
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Work:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia magni voluptate, quasi repudiandae nemo suscipit adipisci. Molestias earum exercitationem quia sed rem doloremque obcaecati</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.work">{{profileInfo.work}}</p>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +67,7 @@
                             <div class="thumbnail">
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Education:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia magni voluptate, quasi repudiandae nemo suscipit adipisci. Molestias earum exercitationem quia sed rem doloremque obcaecati!</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.education">{{profileInfo.education}}</p>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +75,7 @@
                             <div class="thumbnail">
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Family:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia magni voluptate, quasi repudiandae nemo suscipit adipisci. Molestias earum exercitationem quia sed rem doloremque obcaecati</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.family">{{profileInfo.family}}</p>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +83,7 @@
                             <div class="thumbnail">
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Places Lived:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aspernatur blanditiis earum dolorum nam, vitae maiores totam fugit quae fugiat ratione corrupti. Hic, voluptatibus neque?</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.places">{{profileInfo.places}}</p>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +93,7 @@
                             <div class="thumbnail">
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Top 8:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia magni voluptate, quasi repudiandae nemo suscipit adipisci. Molestias earum exercitationem quia sed rem doloremque obcaecati</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.top">{{profileInfo.top}}</p>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +101,7 @@
                             <div class="thumbnail">
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Co Workers:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia magni voluptate, quasi repudiandae nemo suscipit adipisci. Molestias earum exercitationem quia sed rem doloremque obcaecati!</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.coworkers">{{profileInfo.coworkers}}</p>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +111,7 @@
                             <div class="thumbnail">
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Phone Number:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia magni voluptate, quasi repudiandae nemo suscipit adipisci. Molestias earum exercitationem quia sed rem doloremque obcaecati</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.phone">{{profileInfo.phone}}</p>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +120,7 @@
                                 <img src="img/dip.jpg" alt="..." class="img-responsive imgThumb min100" />
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Email:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia magni voluptate, quasi repudiandae nemo suscipit adipisci. Molestias earum exercitationem quia sed rem doloremque obcaecati!</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.email">{{profileInfo.email}}</p>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +129,7 @@
                                 <img src="img/eggplant.jpg" alt="..." class="img-responsive imgThumb" />
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Websites:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia magni voluptate, quasi repudiandae nemo suscipit adipisci. Molestias earum exercitationem quia sed rem doloremque obcaecati</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.websites">{{profileInfo.websites}}</p>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +138,7 @@
                                 <img src="img/meat.jpg" alt="..." class="img-responsive imgThumb" />
                                 <div class="caption">
                                     <h3 class="raleway text-center"><b>Other Accounts:</b></h3>
-                                    <p class="raleway jusRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aspernatur blanditiis earum dolorum nam, vitae maiores totam fugit quae fugiat ratione corrupti. Hic, voluptatibus neque?</p>
+                                    <p class="raleway jusRaleway" ng-model="profileInfo.accounts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aspernatur blanditiis earum dolorum nam, vitae maiores totam fugit quae fugiat ratione corrupti. Hic, voluptatibus neque?</p>
                                 </div>
                             </div>
                         </div>

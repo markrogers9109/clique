@@ -10,17 +10,11 @@ angular.module('app')
             .state('profile',{
                 url:'/profile',
                 templateUrl:'profile/profile.html',
-                controller:"profileCtrl",
-                controller: "pushCtrl"
+                controller:"profileCtrl"
             })
             .state('about',{
                 url:'/about',
                 templateUrl:'about/about.html',
                 controller:"AboutCtrl"
             });
-    })
-    .service("profileInfo", function profileInfo() {
-        var info = this;
-
-        info.message = "User_Name";
     });

@@ -36,6 +36,15 @@
     margin-top: 3%;
 }
 
+.jumboPro {
+    width: 85%;
+}
+
+.jumboPro .jumbotron {
+    padding-bottom: 18%;
+    padding-left: 0px;
+}
+
 .input-group .form-control {
     position: relative;
     z-index: 2;
@@ -48,7 +57,7 @@
     display: block;
     padding-top: 3%;
     padding-bottom: 15%;
-    border-bottom: 1px solid lightgray;
+    /*border-bottom: 1px solid lightgray;*/
 }
 
 .col-sm-1 {

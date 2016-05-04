@@ -1,12 +1,7 @@
 
 angular.module('app')
-    .controller('pushCtrl', function pushCtrl(profileInfo) {
-        var push = this;
-
-        push.profileInfo = profileInfo;
-    })
-    .controller('profileCtrl', profileCtrl);
-    function profileCtrl($scope, $window){
+    .controller('profileCtrl', function profileCtrl($scope, $window, profileInfo){
+        $scope.profileInfo = profileInfo;
         $scope.message='hello';
         $scope.things_todo = [];
         $scope.get_todo = function() {
@@ -33,4 +28,4 @@ angular.module('app')
             $scope.things_todo[index] = $scope.inputModel;
             $scope.keep_todo();
         };
-}
+});
