@@ -12,6 +12,22 @@ angular.module('app')
                 templateUrl:'profile/profile.html',
                 controller:"profileCtrl"
             })
+            .state('profile.aboutTab',{
+                url:'/aboutTab',
+                templateUrl:'tabs/aboutTab.html'
+            })
+            .state('profile.friends',{
+                url:'/friends',
+                templateUrl:'tabs/friends.html'
+            })
+            .state('profile.contact',{
+                url:'/contact',
+                templateUrl:'tabs/contact.html'
+            })
+            .state('profile.photos',{
+                url:'/photos',
+                templateUrl:'tabs/photos.html'
+            })
             .state('about',{
                 url:'/about',
                 templateUrl:'about/about.html',

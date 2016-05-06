@@ -28,4 +28,9 @@ angular.module('app')
             $scope.things_todo[index] = $scope.inputModel;
             $scope.keep_todo();
         };
+        $scope.doSomething = function(event) {
+            if (event.keyCode == 13) {
+                $scope.push_todo(inputModel);
+            }
+        }
 });
