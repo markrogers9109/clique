@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default abtNav">
   <div class="container-fluid">
-    <a class="navbar-brand col-sm-3" ui-sref="about">clique</a>
+    <brand-dir></brand-dir>
     <form class="navbar-form navbar-right" role="search">
       <div class="form-group">
         <label class="sr-only" for="exampleInputEmail3">User Name</label>
@@ -23,13 +23,14 @@
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin">
                 <span id="reauth-email" class="reauth-email"></span>
+                <input type="text" class="form-control" placeholder="Full Name" ng-model="profileInfo.name">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email" ng-model="profileInfo.email">
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <input type="text" class="form-control" placeholder="User Name" ng-model="profileInfo.name">
+                <input type="text" class="form-control" placeholder="User Name" ng-model="profileInfo.user">
                 <input type="text" class="form-control" placeholder="Age" ng-model="profileInfo.age" required>
                 <input type="text" class="form-control" placeholder="Phone Number" ng-model="profileInfo.phone">
                 <input type="text" class="form-control" placeholder="Work" ng-model="profileInfo.work">
-                <input type="text" class="form-control" placeholder="Location" ng-model="profileInfo.places">
+                <input type="text" class="form-control" placeholder="Home Town" ng-model="profileInfo.places">
                 <input type="text" class="form-control" placeholder="Education" ng-model="profileInfo.education">
                 <!-- <textarea class="form-control" rows="3" ng-model="profileInfo.family">{{profileInfo.family}}</textarea>
                 <textarea class="form-control" rows="3" ng-model="profileInfo.top">{{profileInfo.top}}</textarea> -->

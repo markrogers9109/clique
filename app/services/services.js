@@ -2,6 +2,7 @@
 angular.module('app')
     .service("profileInfo", function profileInfo() {
         return {
+            user: "",
             name: "",
             age: "",
             phone: "",

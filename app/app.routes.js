@@ -1,12 +1,7 @@
 angular.module('app')
     .config(function($stateProvider,$urlRouterProvider){
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/about');
         $stateProvider
-            .state('home',{
-                url:'/home',
-                templateUrl:'home/home.html',
-                controller:"HomeCtrl"
-            })
             .state('profile',{
                 url:'/profile',
                 templateUrl:'profile/profile.html',

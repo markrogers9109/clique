@@ -1,8 +1,8 @@
 
 angular.module('app')
     .controller('profileCtrl', function profileCtrl($scope, $window, profileInfo){
+        $scope.activeTab = 1;
         $scope.profileInfo = profileInfo;
-        $scope.message='hello';
         $scope.things_todo = [];
         $scope.get_todo = function() {
             var string =  $window.localStorage.things_todo;
@@ -24,13 +24,34 @@ angular.module('app')
             $scope.things_todo.splice(index, 1);
             $scope.keep_todo();
         };
-        $scope.edit = function(index) {
-            $scope.things_todo[index] = $scope.inputModel;
+        $scope.edit_start= function(index){
+            $scope.toEdit = index;
+            $scope.editModel = $scope.things_todo[index];
+            console.log($scope.toEdit);
+            $scope.editing=true;
+            // $scope.keep_todos();
+        };
+        $scope.edit_complete =function(index){
+            $scope.newEdit = $scope.editModel;
+            var wlsArray = $window.localStorage.things_todo.split(',');
+            console.log(wlsArray);
+            yo = wlsArray[$scope.toEdit] = $scope.newEdit;
+            console.log('edited:', wlsArray[$scope.toEdit]);
+            console.log('yo:', yo);
+            console.log('things_todo:', $scope.things_todo);
+            $scope.things_todo[$scope.toEdit] = $scope.newEdit;
+            console.log('things_todo[toedit]: ',
+            $scope.things_todo[$scope.toEdit]);
             $scope.keep_todo();
+            $scope.editing=false;
         };
         $scope.doSomething = function(event) {
             if (event.keyCode == 13) {
                 $scope.push_todo(inputModel);
             }
-        }
+        };
+        $scope.toggleModal = function(){
+            $scope.showModal = !$scope.showModal;
+        };
+
 });
