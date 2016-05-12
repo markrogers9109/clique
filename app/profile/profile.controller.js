@@ -32,26 +32,20 @@ angular.module('app')
             // $scope.keep_todos();
         };
         $scope.edit_complete =function(index){
-            $scope.newEdit = $scope.editModel;
-            var wlsArray = $window.localStorage.things_todo.split(',');
-            console.log(wlsArray);
-            yo = wlsArray[$scope.toEdit] = $scope.newEdit;
-            console.log('edited:', wlsArray[$scope.toEdit]);
-            console.log('yo:', yo);
-            console.log('things_todo:', $scope.things_todo);
-            $scope.things_todo[$scope.toEdit] = $scope.newEdit;
-            console.log('things_todo[toedit]: ',
-            $scope.things_todo[$scope.toEdit]);
+            $scope.things_todo[index] = $scope.editModel;
+            console.log[index];
+            // var wlsArray = $window.localStorage.things_todo.split(',');
+            // console.log(wlsArray);
+            // yo = wlsArray[$scope.toEdit] = $scope.newEdit;
+            // console.log('edited:', wlsArray[$scope.toEdit]);
+            // console.log('yo:', yo);
+            console.log($scope.things_todo);
+            console.log($scope.editModel);
+            // $scope.things_todo[$scope.toEdit] = $scope.newEdit;
+            // console.log('things_todo[toedit]: ',
+            // $scope.things_todo[$scope.toEdit]);
             $scope.keep_todo();
-            $scope.editing=false;
-        };
-        $scope.doSomething = function(event) {
-            if (event.keyCode == 13) {
-                $scope.push_todo(inputModel);
-            }
-        };
-        $scope.toggleModal = function(){
-            $scope.showModal = !$scope.showModal;
+            // $scope.editing=false;
         };
 
 });

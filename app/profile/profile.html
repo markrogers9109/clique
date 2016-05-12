@@ -64,7 +64,7 @@
         </div>
         <div class="col-sm-8">
             <div class="input-group col-sm-10">
-              <textarea class="form-control" rows="4" placeholder="Post to your timeline..." ng-keyup="doSomething($event)" ng-model="inputModel"></textarea>
+              <textarea class="form-control" rows="4" placeholder="Post to your timeline..." ng-model="inputModel"></textarea>
               <button class="btn btn-default postBtn" type="button" ng-click="push_todo(inputModel)">Post</button>
               <ul>
                   <li ng-repeat="thing in things_todo track by $index" class="liPost">
@@ -74,10 +74,10 @@
                       <button class="glyphicon glyphicon-pencil col-sm-1" type="button" ng-mousedown="edit_start($index)" ng-click="myStyle={'transition':'0.5s linear all', 'opacity':'0', 'opacity':'1'}"></button>
                       <div class="input-group editInput" ng-style="myStyle" ng-show="myStyle">
                           <div class="input-group-btn">
-                              <button class="btn btn-default" type="button" ng-mousedown="myStyle={'transition':'0.5s linear all', 'opacity':'1', 'opacity':'0'}" ng-click="edit_complete($index)">Edit</button>
+                              <button class="btn btn-default" type="button" ng-mousedown="myStyle={'transition':'0.5s linear all', 'opacity':'1', 'opacity':'0'}">Edit</button>
                               <button class="btn btn-default" type="button" ng-click="myStyle={'transition':'0.5s linear all', 'opacity':'1', 'opacity':'0'}">Cancel</button>
                           </div>
-                          <input type="text" class="form-control" ng-model="editModel" placeholder="Edit...">
+                          <input type="text" class="form-control" ng-model="things_todo[$index]" placeholder="Edit...">
                       </div>
                   </li>
               </ul>
